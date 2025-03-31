@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./18_registerform.css">
+    <title>Registration form</title>
+</head>
+<body> 
+    <h1 style="color: red; " >Registration Form</h1>
+    <!---Action is an attribute of form element -->
+    <form action="#" method="post"  enctype="multipart/form-data">
+        <fieldset> <!------fieldset bhaneko chai box jasto ho -->
+            <legend>Personal Details</legend> <!---fieldset sanga pari garera rakhinxa group ko titile or caption lekhna -->
+            <div class="form-group"><!----div has no semantic meaning-->
+            <label for="">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+           <br>
+           </div>    
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+
+           <div class="form-group">
+            <!----email wala box ko lagi-->
+           <label for="phone">Phone</label>
+           <input type="number" id="phone" name="phone">
+           <br>
+           </div>
+
+           <div class="form-group">
+            <!-----gender ko div-->
+           <label for="">Gender</label>
+           <input type="radio" value="m" name="gender">Male <!----radio type chai option bata aauta matra select garnu xa bhane use hunca option ko name same huna parxa.-->
+           <input type="radio" value="f" name="gender">Female
+           <br />
+           </div>
+
+           <div class="form-group">
+            <!-----country  ko lagi box-->
+           <label for="country">Country</label>
+           <select name="country" id="country">
+            <option value="">Select Country</option>
+            <optgroup label="Asia">
+                <option>Nepal</option>
+            <option value="+91">+91-India</option>
+            <option value="+81">Japan</option>
+            <option value="">Philipines</option>
+            <option value="">China</option>
+           </optgroup>
+        </select>
+           <br />
+           </div>
+
+           <div class="form-group ">
+            <!------bio data halna ko lagi box like feedback -->
+           <label for="comment">Message</label>  
+           <textarea name="bio" id="bio"></textarea> <!----text area wala tag le chai user bata enter accept gardai text lekhna milne box create garxa-->
+           <br/>
+           </div>
+           
+           <div class="form-group">
+            <!------profile ko lagi div-->
+           <label for="Profile">Image</label>
+           <input type="file" name="Profile">  <!-----type file bhayeko kina bhane user le afno data upload garna milos bhanera-->
+           <br/>
+           </div>
+
+           <div class="form-group">
+          <input type="checkbox">I accept terms & condition.
+           </div>
+
+           <div class="form-group btn">
+            <!-------register ra clear aautai box ma so same division-->
+           <input type="submit" value="Register">
+           <input type="reset" value="Clear">
+           </div>
+        </fieldset>
+    </form>
+</body>
+</html>

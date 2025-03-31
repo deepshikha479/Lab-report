@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* universal selector use garera sablai eeuati size banako */
+}
+
+h1{
+    text-align: center; /* heading name bhanne lai center ma align gareko */
+}
+
+fieldset{
+    width: 70%;
+    margin: auto;
+    padding: 30px; /*fieldset is used when grouping related form elements e.g. personal info, payment details.*/
+}
+
+fieldset legend{    
+    text-align: center;
+}
+
+div.form-group{ /*div element class form group*/
+    /* use div for general grouping of content or layout purposes.*/
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+div.form-group label{
+    color: black;
+    width: 100px;
+    display: inline-block;
+}
+
+div.form-group input,select,textarea{  /*selecting class form-group and multiple elements input, select,textarea*/
+    width: 70%;
+    padding: 5px;
+}
+
+div.form-group input[type=radio]{ /*selecting class form-group element input and its type radio*/
+    width: 5%;
+}
+
+div.form-group input[type=checkbox]{ /*selecting class form-group element input and its type checkbox*/
+    width: 5%;
+}
+
+
+div.form-group.btn input{
+    width: 20%;
+    border:none;
+    padding: 5px 0;
+}
+
+div.form-group.btn input[type=submit]{
+    background-color: rgb(16, 39, 212);
+    color:white;
+}
+
+
+div.form-group.btn input[type=reset]{
+    background-color: rgb(205, 38, 38);
+    color:rgb(254, 243, 243);
+}
+
+div.form-group:last-child{
+    border-bottom: none;
+}
+
+div.form-group:nth-child(3n){
+    background-color: aliceblue;
+}
+
+div.form-group:nth-child(3n+1){
+    background-color: #fff;
+}
+
+div.form-group:nth-child(3n+2){
+    background-color: rgb(245, 246, 247);
+}
+
+div.form-group label.require::after{
+    content: "*";
+    color: red;
+}

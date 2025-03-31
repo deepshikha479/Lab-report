@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*to make boxes*/
+    gap: 10px; /*individual box ko gap maintain garne*/
+    background: #dfe6e9;
+    padding: 15px;
+    border-radius: 1px;   /*side ko edges curve banauna more px*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;  /*side ko edges curve banauna more px*/
+    text-align: center;
+    border-radius: 1px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #2d3436;
+    margin: 5px;
+}
+span {
+    text-align: left; /* list lai bullet sangai align garna kolagi.*/
+}

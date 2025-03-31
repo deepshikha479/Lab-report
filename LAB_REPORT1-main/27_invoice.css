@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.invoice-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f60;
+    padding-bottom: 10px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.company-details {
+    text-align: left;
+}
+
+.invoice-title {
+    text-align: right;
+    margin-top: 20px;
+}
+.invoice-title h1 {
+    margin: 0;
+}
+
+.invoice-title .date-invoice-no {
+    margin-top: 10px;
+   
+}
+
+.bill-to-ship-to {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bill-to-ship-to div {
+    width: 45%;
+}
+.bill-to-ship-to h3 {
+    margin-bottom: 5px;
+}
+
+.items-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.items-table th,
+.items-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+.items-table th {
+    background-color: #f60;
+    color: white;
+}
+.items-table td:first-child {
+    text-align: left;
+}
+
+.totals {
+    margin: 20px;
+    text-align: right;
+    padding: 10px;
+
+    border-left: 0px;
+    
+}
+
+.totals div {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.balance-due {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 2px dashed black;
+}
+.footer{
+        border-bottom: 2px solid #f60;
+        padding-bottom: 10px;
+    }

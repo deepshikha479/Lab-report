@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration / Login Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #343a40; /* Dark background */
+            color: #fff; /* Light text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+             background-color: rgb(29, 28, 28);/* Darker container background */
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            display: flex;
+            width: 800px;
+            max-width: 95%;
+            overflow: hidden;
+        }
+
+        .form-section {
+            padding: 40px;
+            flex: 1;
+        }
+
+        .form-section h2 {
+            color: rgb(56, 199, 235);
+            margin-bottom: 30px;
+            text-align: left;
+            margin-bottom: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #adb5bd;
+            margin-bottom: 8px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #495057;
+            border-radius: 4px;
+            background-color: #343a40;
+            color: #fff;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group input[type="password"]:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .form-hint {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .gender-group label {
+            margin-right: 15px;
+            float: left;
+        }
+
+        .gender-group input[type="radio"] {
+            margin-right: 5px;
+            float: left;
+        }
+
+        .terms-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .terms-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-button,
+        .login-button {
+            background-color: #e38622; /* Yellow button */
+            color: #212529;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .submit-button:hover,
+        .login-button:hover {
+            background-color: rgb(47, 0, 255);
+        }
+
+        .login-section {
+            border-left: 1px solid #495057;
+        }
+
+        .remember-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="form-container">
+        <div class="form-section">
+            <h2>Register Form :</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username"></label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Please enter a valid email address</label>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Minimum of 6 characters</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm paasword">
+                </div>
+                <div class="form-group">
+                    <div class="gender-group">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                </div>
+            </br>
+        </br>
+                <div class="terms-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I have read and accept terms of use.</label>
+                </div>
+                <button type="submit" class="submit-button">SUBMIT</button>
+            </form>
+        </div>
+        <div class="form-section login-section">
+            <h2>Login form :</h2>
+            <form>
+                <div class="form-group">
+                    <label for="login-email"></label>
+                    <input type="email" id="login-email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password"></label>
+                    <input type="password" id="login-password" placeholder="Password">
+                </div>
+                <div class="remember-group">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="login-button">LOGIN</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

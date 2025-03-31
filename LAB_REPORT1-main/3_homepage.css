@@ -1,0 +1,140 @@
+/* default styles ko lagi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic page styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(140, 136, 136);
+    color: #333;
+  }
+  
+  /* Header & Navigation Styling mathi aboutus, service, gallery ,contact ko lagi*/
+  header {
+    background-color: #7b2d66;
+    padding: 10px 0;
+  }
+  
+  header nav ul { /*header bhitra ko nav bhitra ko ul lai style garna*/
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Main Content Styling */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Services List Styling */
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    font-size: 16px;
+  }
+  
+  /* Gallery Section */
+  .images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Contact Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-size: 16px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: rgb(112, 112, 232);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: rgb(65, 64, 64);
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #7b2d66;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Responsive Design  ko lagi */
+  @media (max-width: 768px) {
+    header nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }

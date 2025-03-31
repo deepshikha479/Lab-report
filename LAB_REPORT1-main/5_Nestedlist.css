@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 2px;
+    padding: 5px;
+}
+.box1 {
+    width: 50%;
+    float: left;
+    border: 1px solid black;
+    height: 538px;
+    font-size: larger;
+}
+.box2 {
+    width: 50%;
+    float: inline-end;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.box2{
+    font-size: small;
+}

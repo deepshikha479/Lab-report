@@ -1,0 +1,90 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100%;
+   margin: 0;
+}
+.list div{
+    width: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #100207;
+
+}
+
+#a1{
+width: 100%;
+padding: 10px;
+background-color: #47385f;
+height: 50px;
+margin-bottom: 0;
+margin-left: 0;
+
+
+}
+
+#a2{
+    padding: 20px;
+    background-color: rgb(65, 84, 77);
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+#a3{
+float: left;
+height: 250px;
+background-color: rgb(104, 15, 15);
+ width: 30%;
+ text-align:left;
+ margin: 5px;
+ margin-top: 0;
+ margin-left: 0;
+ margin-right: 0;
+ margin-bottom: 0;
+}
+#a4 
+{
+    float: left;
+    background-color: rgb(87, 115, 243);
+    width: 40%;
+    height: 250px;
+    margin: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: left;
+
+}
+#a5 
+{
+margin-right: 0;
+margin-top: 0;
+margin-left: 0;
+ margin-bottom: 0;
+float: right;
+height:250px;
+width: 30%;
+background-color: rgb(120, 44, 152);
+text-align: left;
+}
+
+#a6{
+width: 100%;
+padding: 10px;
+background-color: #394b41;
+height: 50px;
+margin-bottom: 0;
+margin-left: 0;
+text-align: left;
+}

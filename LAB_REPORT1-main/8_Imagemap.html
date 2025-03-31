@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+</head>
+<body>
+    <h1>Image Map Demonstration</h1>
+    <!--putting image -->
+    <img src="Images/Cat.jpg" alt="My Cat" usemap="#example-map" width="600">
+
+    <map name="example-map">
+        <!--i have written all shapes format in a single html file only one property  below rect,circle or poly can be used at once-->
+        <!-- Rectangle Shape -->
+         <!--by clicking on tab you can see the shapes of image mappings-->
+        <area shape="rect" coords="50,50,200,150" href="https://www.google.com" alt="Rectangle Area">
+
+        <!-- Circle Shape -->
+        <area shape="circle" coords="300,100,50" href="https://example.com/circle" alt="Circle Area">
+
+        <!-- Polygon Shape -->
+        <area shape="poly" coords="400,50,500,150,450,200" href="https://example.com/polygon" alt="Polygon Area">
+    </map>
+</body>
+</html>
