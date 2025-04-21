@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lok sewa aayog</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Image">
+        <h1>Public Service Commission</h1>
+        <h2>Register</h2>
+        <form action="/submit_registration" method="post">
+            <div class="row">
+                <div>
+                    <label for="first_name">First Name *</label>
+                    <input type="text" class="name" name="first_name" required>
+                </div>
+                <div>
+                    <label for="middle_name">Middle Name</label>
+                    <input type="text" class="name" name="middle_name">
+                </div>
+                <div>
+                    <label for="last_name">Last Name *</label>
+                    <input type="text" class="name" name="last_name" required>
+                </div>
+            </div>
+
+            <label for="username">Username *</label>
+            <input type="text" class="name" name="username" required>
+
+            <label for="dob_bs">Date Of Birth (B.S.) *</label>
+            <input type="date" class="name" name="dob_bs" required>
+
+            <label for="dob_ad">Date Of Birth (A.D.) *</label>
+            <input type="date" class="name" name="dob_ad" required>
+
+            <label>Gender *</label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+            </div>
+
+            <label for="email">Email *</label>
+            <input type="email" class="name" name="email" required>
+
+            <div class="row">
+                <div>
+                    <label for="mobile">Mobile Number *</label>
+                    <input type="tel" class="name" name="mobile" required>
+                </div>
+                <div>
+                    <label for="national_id">National ID</label>
+                    <input type="text" class="name" name="national_id">
+                </div>
+                <div>
+                    <label for="citizenship_no">Citizenship Number *</label>
+                    <input type="text" class="name" name="citizenship_no" required>
+                </div>
+            </div>
+
+            <label for="citizenship_district">Citizenship Issue District *</label>
+            <select class="name" name="citizenship_district" required>
+                <option value="">Choose Option...</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <div class="row">
+                <div>
+                    <label for="citizen_issue_bs">Citizenship Issue Date (B.S.) *</label>
+                    <input type="date" class="name" name="citizen_issue_bs" required>
+                </div>
+                <div>
+                    <label for="citizen_issue_ad">Citizenship Issue Date (A.D.) *</label>
+                    <input type="date" class="name" name="citizen_issue_ad" required>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="back-button">Back to Login</button>
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

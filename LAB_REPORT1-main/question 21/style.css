@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181b27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 650px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+img{
+    width: 10%;
+    float: left;
+}
+h2{
+    font-size: 32px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+}
+.name{
+    width: 100%;
+    margin-bottom: 20px;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    background-color: #f8f9fa;
+}
+.gender-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    width: 30%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.back-button {
+    width: auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    margin-top: 10px;
+}
